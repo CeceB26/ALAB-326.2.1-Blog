@@ -4,31 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Blog preview card</title>
+  <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+ body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(47, 88%, 63%);
+  font-family: Arial, sans-serif;
+}
+/*h3 {
+  text-align: left;
+  font-weight: bold;
+  background-color: rgb(228, 228, 27);
+  padding: 0 4px;
+  display: inline;
+}
+
+/* the blue/gray panel */
+/.blue-box {
+  width: 80vw;
+  max-width: 1200px;
+  background-color: #dae3ed;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 48px 24px;          /* more space like the reference */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;      /* center card horizontally */
+  align-items: center;          /* center card vertically (matches reference) */
+}
+
+/* the white card */
+.card {
+  width: 100%;
+  max-width: 320px;             /* this is the big difference */
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 10px 6px 12px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box, ;
+  text-align: center;
+  
+  
+}
+
+/* image should fill the card padding area */
+.card-img-top {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+/* text spacing */
+.card-title {
+  margin: 18px 0 12px;
+  font-size: 20px;
+  color: rgb(228, 228, 71);
+}
+
+.card-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #555;
+   text-align: left; 
+}
+
+/* put attribution under everything, not inside the card */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 16px;
+}
+.greg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.category {
+  text-align: left;   /* controls alignment */
+}
+
+.highlight {
+  background-color: rgb(228, 228, 27);
+  padding: 0 4px;
+  font-weight: bold;
+  display: inline;    /* tight highlight */
+  line-height: 1;
+}
+
+
   </style>
 </head>
 <body>
+  <section>
+      <div class="blue-box">
+        <div class="card" style="width: 18rem;">
+  <img src="../blog-preview-card-main/assets/images/illustration-article.svg" class="card-img-top" alt="...">
 
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="card-body">
+    <h3 class="category">
+     <span class="highlight">Learning</span>
+  </h3>
+    <p class="category">Published 21 Dec 2023</p>
+    <h4 class="card-title">HTML & CSS foundations</h4>
+    <p class="card-text">These languages are the backbone of every website,defining structure,content, and presentation.</p>  
   </div>
+    <div class="greg">
+  <img src="../blog-preview-card-main/assets/images/image-avatar.webp" alt="Greg Hooper">
+  <a>Greg Hooper</a>
+</div>
+
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
