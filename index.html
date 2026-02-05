@@ -48,13 +48,12 @@
   width: 100%;
   max-width: 320px;             /* this is the big difference */
   background: #fff;
+  border: 1px solid #000;   /* 👈 ADD THIS */
   border-radius: 16px;
   padding: 16px;
-  box-shadow: 10px 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 8px 8px 0 #000; /* updated shadow */
   box-sizing: border-box, ;
-  text-align: center;
-  
-  
+  text-align: center;  
 }
 
 /* image should fill the card padding area */
@@ -68,7 +67,9 @@
 .card-title {
   margin: 18px 0 12px;
   font-size: 20px;
-  color: rgb(228, 228, 71);
+  color: rgb(38, 38, 37); /*active=rgb(228, 228, 71);
+and centered*/
+text-align: left;
 }
 
 .card-text {
@@ -90,18 +91,26 @@
   align-items: center;
   gap: 10px;
   font-weight: bold;
+  padding:15px;
 }
-
+.greg-pic {
+  height: 25px;
+}
 .category {
   text-align: left;   /* controls alignment */
+  font-size: 15px;
 }
 
 .highlight {
   background-color: rgb(228, 228, 27);
-  padding: 0 4px;
+  padding: 4px;
   font-weight: bold;
   display: inline;    /* tight highlight */
   line-height: 1;
+}
+.card-header {
+  text-align: left;   /* controls alignment */
+  font-size: 20px;
 }
 
 
@@ -114,7 +123,7 @@
   <img src="../blog-preview-card-main/assets/images/illustration-article.svg" class="card-img-top" alt="...">
 
   <div class="card-body">
-    <h3 class="category">
+    <h3 class="card-header">
      <span class="highlight">Learning</span>
   </h3>
     <p class="category">Published 21 Dec 2023</p>
@@ -122,7 +131,7 @@
     <p class="card-text">These languages are the backbone of every website,defining structure,content, and presentation.</p>  
   </div>
     <div class="greg">
-  <img src="../blog-preview-card-main/assets/images/image-avatar.webp" alt="Greg Hooper">
+  <img src="../blog-preview-card-main/assets/images/image-avatar.webp" alt="Greg Hooper" class="greg-pic">
   <a>Greg Hooper</a>
 </div>
 
